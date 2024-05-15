@@ -1,0 +1,23 @@
+#myFirstDiv{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1{
+    font-style: normal;
+    border: 2px solid #3d899f;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    display: flex;
+    height: auto;
+
+}
+
