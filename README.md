@@ -1,3 +1,1 @@
-Website - it has the website
-Video - contains the presentation
-PPT
+Mapping the cost of mobile money in SMEs in Kenya
