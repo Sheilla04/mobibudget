@@ -1,0 +1,329 @@
+/* Import the "Ink Free" font */
+@import url('https://fonts.googleapis.com/css2?family=Ink+Free&display=swap');
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centered container for the navbar */
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the navigation bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #71e4f9;
+    overflow: hidden;
+    padding: 14px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Keyframes for navbar animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style the logo */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 80px; /* Adjust the height as needed */
+    margin-right: 20px; /* Increase the space between the image and the text */
+}
+
+.navbar .logo .brand-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Ink Free', cursive;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Moves nav bar links to the right */
+.navbar .nav-links {
+    display: flex;
+}
+
+/* Style the links inside the navbar */
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #85ebe6;
+    color: black;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+/* Add some padding to the top of the body to prevent content from being hidden behind the navbar */
+body {
+    padding-top: 60px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style the sections */
+section {
+    padding: 60px 20px;
+    opacity: 0;
+    animation: fadeInUp 1.5s forwards;
+}
+
+/* Keyframes for fade-in-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style the hero section */
+.hero-section {
+    position:relative;
+    height: 100vh;
+    background-image: url('overhead-view-of-an-office-meeting.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+/* Keyframes for slide-in-left animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+/* Keyframes for slide-in-right animation */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Style the card */
+.card {
+    background-color: #31acd12f;
+    border-radius: 10px;
+    padding: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    flex: auto; /* Take up remaining space */
+    padding-left: 30px; /* Add some space between image and text */
+
+}
+
+.card-image {
+    width: 300px; /* Adjust image width as needed */
+    height: 300px;
+    border-radius: 10px; /* Optional: Apply border radius to image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-image:hover {
+    transform: scale(1.05);
+}
+
+.card-image2 {
+    width: 450px; /* Adjust image width as needed */
+    height: 300px;
+    border-radius: 10px; /* Optional: Apply border radius to image */
+    padding-right: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-image2:hover {
+    transform: scale(1.1);
+}
+
+/* Specific styles for the card with image on the right */
+.card-image-right {
+    order: 2; /* Ensure image is on the right */
+    margin-left: 20px; /* Add space between image and text */
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-image-right:hover {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.card p {
+    font-size: 1.1rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive Design */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Responsive for mobile screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 14px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.active + .nav-links {
+        display: flex;
+    }
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to create a new row if necessary */
+    justify-content: space-around; /* Spread items horizontally */
+    padding-left: 30px;
+    padding-right: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.team-member {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px;
+    margin-bottom: 20px; /* Add some spacing between team members */
+    background-color: #aba5a536;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+    background-color: #ffffff80;
+}
