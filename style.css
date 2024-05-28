@@ -198,7 +198,7 @@ section h2 {
 
 /* Style the card */
 .card {
-    background-color: #31acd12f;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -348,7 +348,7 @@ footer {
 /* Responsive for mobile screens */
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: inline;
+        display: none;
         flex-direction: row;
         width: 100%;
         text-align: center;
