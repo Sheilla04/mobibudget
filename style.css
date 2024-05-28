@@ -77,6 +77,11 @@ body, html {
     transition: all 0.3s ease-in-out;
 }
 
+.navbar .logo a:hover {
+    background-color: #71e4f9;
+    
+}
+
 /* Change color on hover */
 .navbar a:hover {
     background-color: #85ebe6;
