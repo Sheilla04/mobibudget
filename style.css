@@ -222,7 +222,7 @@ section h2 {
 }
 
 .card-image2:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Specific styles for the card with image on the right */
@@ -236,7 +236,7 @@ section h2 {
 }
 
 .card-image-right:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card h3 {
@@ -289,7 +289,7 @@ section h2 {
 }
 
 .team-member a:hover {
-    color: #71e4f9;
+    color:  #ffffff80;
 }
 
 /* Footer styles */
