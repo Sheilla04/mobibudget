@@ -1,11 +1,11 @@
-/* Import the "Ink Free" font */
-@import url('https://fonts.googleapis.com/css2?family=Ink+Free&display=swap');
+/* Import the "Poppins" font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 /* Reset some default styles */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Centered container for the navbar */
@@ -58,7 +58,6 @@ body, html {
     font-size: 30px;
     font-weight: bold;
     color: white;
-    font-family: 'Ink Free', cursive;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -119,6 +118,15 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Style the section headers */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Style the hero section */
