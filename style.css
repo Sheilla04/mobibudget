@@ -123,10 +123,11 @@ section {
 
 /* Style the hero section */
 .hero-section {
-    position:relative;
+    position: relative;
     height: 100vh;
     background-image: url('overhead-view-of-an-office-meeting.jpg');
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +178,7 @@ section {
 .card {
     background-color: #31acd12f;
     border-radius: 10px;
-    padding: 100px;
+    padding: 20px;
     margin-bottom: 20px;
     display: flex;
     animation: fadeIn 1s ease-in-out;
@@ -190,8 +191,7 @@ section {
 
 .card-content {
     flex: auto; /* Take up remaining space */
-    padding-left: 30px; /* Add some space between image and text */
-
+    padding-left: 20px; /* Add some space between image and text */
 }
 
 .card-image {
@@ -239,6 +239,49 @@ section {
 .card p {
     font-size: 1.1rem;
     animation: fadeInUp 1s ease-in-out;
+}
+
+/* Style the team section */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the team members */
+}
+
+.team-member {
+    background-color: #31acd12f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    animation: fadeInUp 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.team-member a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.team-member a:hover {
+    color: #71e4f9;
 }
 
 /* Footer styles */
@@ -318,6 +361,7 @@ footer {
         padding: 20px;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 10px; /* Reduce margin between cards */
     }
 
     .card-content {
