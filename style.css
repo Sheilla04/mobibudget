@@ -62,7 +62,12 @@ body, html {
 }
 
 /* Moves nav bar links to the right */
-.navbar .nav-links {
+.nav-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
     display: flex;
     align-items: center; /* Center the items */
 }
@@ -145,6 +150,7 @@ section h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .hero-content {
@@ -341,26 +347,35 @@ footer {
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         text-align: center;
     }
 
+    .nav-links.active {
+        display: flex;
+        position: absolute;
+        top: 60px; /* Adjust if your navbar height changes */
+        right: 0;
+        background-color: #71e4f9;
+        width: 100%;
+        z-index: 999;
+        padding: 20px 0;
+    }
+
     .nav-links a {
         padding: 14px 0;
+        width: 100%;
     }
 
     .menu-toggle {
         display: flex;
     }
 
-    .menu-toggle.active + .nav-links {
-        display: flex;
-    }
-
     .hero-section {
         background-size: cover;
         padding: 0;
+        width: 100%;
     }
 
     .hero-content h1 {
