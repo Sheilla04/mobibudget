@@ -6,9 +6,15 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    width: 100%;
-    height:100%;
+    font-size: large;
 }
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* centers the container */
+}
+
 
 /* Centered container for the navbar */
 .navbar-container {
@@ -24,7 +30,7 @@ body, html {
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 1200px;
     background-color: #71e4f9;
     overflow: hidden;
     padding: 14px 20px;
@@ -102,7 +108,10 @@ body, html {
 body {
     padding-top: 60px;
     animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* Keyframes for fade-in animation */
 @keyframes fadeIn {
@@ -149,7 +158,7 @@ section h2 {
     background-image: url('overhead-view-of-an-office-meeting.jpg');
     background-size: cover;
     background-position: center;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -163,7 +172,6 @@ section h2 {
 
 .hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
     animation: slideInLeft 1.5s ease-in-out;
 }
 
@@ -198,13 +206,41 @@ section h2 {
 
 /* Style the card */
 .card {
-    background-color: white;
+
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
     animation: fadeIn 1s ease-in-out;
     transition: transform 0.3s ease-in-out;
+    
+    flex: 1 1 calc(33.333% - 40px); /* Each card takes up roughly a third of the container's width, minus the gap */
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    border: 0px solid #ccc; /* Optional: Add border to the card */
+    border-radius: 10px; /* Optional: Rounded corners for the card */
+    overflow: hidden; /* Ensures content doesn't overflow the card's boundaries */
+    background-color: #fff; /* Background color for the card */
+}
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Each card will be at least 300px wide, and will adjust to fit the container */
+    gap: 20px; /* Adds space between the cards */
+    justify-items: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line if necessary */
+}
+
+.card-icon {
+    font-size: 4rem; /* Adjust the size of the icon */
+    color: #71e4f9; /* Color of the icon */
+    margin-bottom: 10px; /* Space between the icon and the text */
+    align-items: center;
+}
+
+.card-service{
+    border: 10px #71e4f9;
+    border-bottom-color: #71e4f9;
 }
 
 .card:hover {
@@ -217,18 +253,15 @@ section h2 {
 }
 
 .card-image {
-    width: 300px; /* Adjust image width as needed */
+    width: 80%; /* Adjust image width as needed */
     height: 300px;
     border-radius: 10px; /* Optional: Apply border radius to image */
     transition: transform 0.3s ease-in-out;
 }
 
-.card-image:hover {
-    transform: scale(1.05);
-}
 
 .card-image2 {
-    width: 450px; /* Adjust image width as needed */
+    width: 50%; /* Adjust image width as needed */
     height: 300px;
     border-radius: 10px; /* Optional: Apply border radius to image */
     padding-right: 30px;
@@ -349,7 +382,7 @@ footer {
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         text-align: center;
     }
@@ -419,3 +452,4 @@ footer {
         margin: 10px 0;
     }
 }
+
