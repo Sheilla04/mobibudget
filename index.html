@@ -9,7 +9,8 @@
         <link rel="icon" href="LogoBlue.jpg" type="image/x-icon" /> <!-- Add favicon -->
     </head>
 <body>
-    <nav class="navbar">
+    <div class="container">
+       <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">
              <a href="#home" class="logo"> <!-- Wrap logo in a link -->
@@ -21,7 +22,6 @@
                 <div class="nav-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#problem">Problem</a>
                     <a href="#services">Services</a>
                     <a href="#team">Team</a>
                 </div>
@@ -32,49 +32,77 @@
                 <span></span>
             </div>
         </div>
-    </nav> 
+        </nav> 
+
     <section id="home" class="hero-section">
         <div class="hero-content">
             <h1 class="content-heading">MobiBudget</h1>
             <p>"Making Every Transaction Count"</p>
         </div>
     </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <div class="card">
-            <img src="profit.jpg" class="card-image">    
-            <div class="card-content">
-                <h3>MobiBudget</h3>
-                <p>Due to the prevalent use of mobile money in Kenyan businesses,<br> MobiBudget was created to help SMEs manage and reduce their mobile money transaction costs efficiently.</p>
-            </div>
-        </div>
-    </section>
+   
     <section id="problem">
-        <h2>Problem</h2>
         <div class="card">
-            <div class="card-content">  
-                <p>Mobile money Transaction costs significantly impact SMEs in Kenya.<br> With high fees and minimal competion, these costs reduce profit and hinder growth. </p>
+            <div class="card-content"> 
+                <p>
+                    Small and Medium Enterprises (SMEs) in Kenya face significant financial challenges due to high mobile money transaction fees. 
+                    These fees accumulate quickly, reducing profits and hindering growth. 
+                    SMEs often lack the resources and tools to manage and optimize these costs effectively.</p>
             </div>
             <img src="image2.jpg" class="card-image-right">
         </div>
     </section>
-    <section id="services">
-        <h2>Services</h2>
+
+    <section id="about">
         <div class="card">
-            <img src="services.jpg" class="card-image2">
+            <img src="profit.jpg" class="card-image">    
             <div class="card-content">
-            <h3>MobiBudget Services</h3>
-            <ul>
-                <li>Cost analysis tools</li>
-                <p>Analyze and track mobile money transaction fees </p>
-                <li>Tariff comparisons</li>
-                <p>Compare transaction fees and identify the most cost-effective methodsof transactions</p>
-                <li>Data-driven insights for financial optimization</li>
-            </ul>
+                <h3>MobiBudget</h3>
+                <p>Due to the prevalent use of mobile money in Kenyan businesses, MobiBudget is in development to help SMEs manage and reduce their mobile money transaction costs efficiently.</p>
             </div>
         </div>
     </section>
-    <section id="team">
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-chart-line card-icon"></i> <!-- Example Font Awesome icon -->
+                    <h3>Cost-Analysis Tools</h3>
+                    <p>Tracking, optimisation and analysis of mobile money transaction fees will be offered to SMEs.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-exchange-alt card-icon"></i> <!-- Example Font Awesome icon -->
+                    <h3>Tariff Comparisons</h3>
+                    <p>Mobi-budget will compare different mobile money transaction fees of different mobile money operators for you.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-lightbulb card-icon"></i> <!-- Example Font Awesome icon -->
+                    <h3>Insight Provision</h3>
+                    <p>This advisory tool will offer SMES the most cost effective methods of transacting money, increasing profitability.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-book card-icon"></i> <!-- Example Font Awesome icon -->
+                    <h3>Financial Resources</h3>
+                    <p>Access to educational resources to those new to business will be available to enrich their experience in this field.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    
+   <section id="team">
         <h2>Our Team</h2>
         <div class="team-container">
             <div class="team-member">
@@ -114,5 +142,6 @@
             document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
+  </div>
 </body>
 </html>
