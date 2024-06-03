@@ -31,6 +31,7 @@ body, html {
     position: fixed;
     top: 0;
     width: 100%;
+    padding-right: 20px;
     background-color: #71e4f9;
     overflow: hidden;
     padding: 14px 20px;
