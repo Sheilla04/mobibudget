@@ -30,7 +30,7 @@ body, html {
 .navbar {
     position: fixed;
     top: 0;
-    width: 1200px;
+    width: 100%;
     background-color: #71e4f9;
     overflow: hidden;
     padding: 14px 20px;
