@@ -33,8 +33,7 @@ body, html {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #71e4f9;
-    /*overflow: hidden;*/
+    background-color: #031932;
     padding: 14px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -94,15 +93,15 @@ body, html {
 }
 
 .navbar .logo a:hover {
-    background-color: #71e4f9;
+    background-color: #031932;
     transform: scale(1.0);
     
 }
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: #85ebe6;
-    color: black;
+    background-color: #5d5e5f;
+    color: rgb(248, 245, 245);
     border-radius: 10px;
     transform: scale(1.1);
 }
@@ -381,6 +380,52 @@ footer {
     transform: translateY(-6px) rotate(-45deg);
 }
 
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 10px;
+}
+
 /* Responsive for mobile screens */
 @media screen and (max-width: 768px) {
     .container{
@@ -398,7 +443,7 @@ footer {
         position:absolute;
         top: 98px; /* Adjust if your navbar height changes */
         right: 0;
-        background-color: #71e4f9;
+        background-color: #031932;
         width: 100%;
         z-index: 999;
         padding: 20px 0;
